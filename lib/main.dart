@@ -1,9 +1,21 @@
+import 'dart:io';
+
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  Platform.isAndroid
+      ? await Firebase.initializeApp(
+          options: FirebaseOptions(
+              apiKey: 'AIzaSyBxQ4Tyefs_9VDcOhzh7e1OqGvHV22M7IE',
+              appId: 'com.example.frist_project',
+              messagingSenderId: '582918923536',
+              projectId: 'watch-list-9b249'))
+      : await Firebase.initializeApp();
+  await FirebaseFirestore.instance.disableNetwork();
+
   runApp(MyApp());
 }
 

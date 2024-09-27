@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "582918923536",
+    "project_id": "watch-list-9b249",
+    "storage_bucket": "watch-list-9b249.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582918923536:android:44a631b95f72fdfd8cf195",
+        "android_client_info": {
+          "package_name": "com.example.frist_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxQ4Tyefs_9VDcOhzh7e1OqGvHV22M7IE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
